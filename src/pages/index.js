@@ -66,12 +66,16 @@ const IndexPage = () => {
   const [token, setToken] = useState(false)
   return (
     <Layout>
+      <p>
+        The Display Name is currently hard-coded with prefixes:<br />
+        1> A Host should be named 'host_[name]'.<br />
+        2> A Primary guest can take any names, I recommend writing 'primary_guest_[name]'.<br />
+        3> A Secondary guest should be named 'secondary_guest_[name]'.<br />
+
+      </p>
       <SEO title="Home" />
       {!token ? <StartForm storeToken={setToken} /> : <Video token={token} />}
-      <p>
-        TODO: 1. Show local video 2. Connect to a room 3. Show participants’
-        video (remote) 4. Handle events
-      </p>
+
     </Layout>
   )
 }
