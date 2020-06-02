@@ -10,7 +10,7 @@ const StartForm = ({ storeToken }) => {
 
     const result = await axios({
       method: "POST",
-      url: "https://myrtle-saola-4331.twil.io/create-token",
+      url: "https://wisteria-camel-9607.twil.io/create-token",
       data: {
         identity: name,
       },
